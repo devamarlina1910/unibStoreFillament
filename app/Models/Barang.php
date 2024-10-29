@@ -19,7 +19,7 @@ class Barang extends Model
         'tersedia',
     ];
 
-    // Relasi One-to-Many dengan model Transaksi
+    // Relasi One-to-Many dengan model Penjualan
     public function penjualans()
     {
         return $this->hasMany(Penjualan::class, 'barang_id');

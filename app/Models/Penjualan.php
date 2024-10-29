@@ -11,8 +11,8 @@ class Penjualan extends Model
 
     protected $fillable = [
         'barang_id',
-        'jumlah_penjualan', // Ganti dari jumlah_transaksi menjadi jumlah_penjualan
-        'tanggal_penjualan', // Ganti dari tanggal_transaksi menjadi tanggal_penjualan
+        'jumlah_penjualan', 
+        'tanggal_penjualan', 
     ];
 
     // Relasi dengan model Barang
