@@ -23,10 +23,10 @@ class PenjualanResource extends Resource
                 Forms\Components\Select::make('barang_id')
                     ->relationship('barang', 'nama_barang')
                     ->required(),
-                Forms\Components\TextInput::make('jumlah_penjualan') // Ganti dari jumlah_transaksi menjadi jumlah_penjualan
+                Forms\Components\TextInput::make('jumlah_penjualan') 
                     ->required()
                     ->numeric(),
-                Forms\Components\DatePicker::make('tanggal_penjualan') // Ganti dari tanggal_transaksi menjadi tanggal_penjualan
+                Forms\Components\DatePicker::make('tanggal_penjualan') 
                     ->required(),
             ]);
     }
@@ -38,9 +38,9 @@ class PenjualanResource extends Resource
                 Tables\Columns\TextColumn::make('barang.nama_barang')
                     ->label('Nama Barang')
                     ->searchable(),
-                Tables\Columns\TextColumn::make('jumlah_penjualan') // Ganti dari jumlah_transaksi menjadi jumlah_penjualan
+                Tables\Columns\TextColumn::make('jumlah_penjualan') 
                     ->sortable(),
-                Tables\Columns\TextColumn::make('tanggal_penjualan') // Ganti dari tanggal_transaksi menjadi tanggal_penjualan
+                Tables\Columns\TextColumn::make('tanggal_penjualan') 
                     ->date()
                     ->sortable(),
                 Tables\Columns\TextColumn::make('created_at')
